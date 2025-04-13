@@ -215,13 +215,11 @@ body {
   margin: auto;
 }
 
-.slide,
-.slide2 {
+.slide {
   display: none; /* Esconde todos os slides por padrão */
 }
 
-.slide img,
-.slide2 img {
+.slide img {
   width: 100%;
   display: block;
   border-radius: 8px;
@@ -272,8 +270,7 @@ body {
   margin-top: 20px;
 }
 
-.dot,
-.dot2 {
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -284,9 +281,7 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.active, 
-.dot:hover,
-.dot2:hover {
+.active, .dot:hover {
   background-color: #717171;
 }
 

@@ -215,13 +215,11 @@ body {
   margin: auto;
 }
 
-.slide,
-.slide2 {
+.slide {
   display: none; /* Esconde todos os slides por padrão */
 }
 
-.slide img,
-.slide2 img {
+.slide img {
   width: 100%;
   display: block;
   border-radius: 8px;

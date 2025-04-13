@@ -178,7 +178,7 @@
           </div>
         </div>
       </section>
-      
+
       <section id="jogos-historicos-slideshow" class="section">
         <div class="container">
           <h2>Momentos Épicos: Reviva a História</h2>
@@ -311,7 +311,7 @@
             <span class="dot" onclick="currentSlide(10)"></span>
           </div>
         </div>
-      </section> 
+      </section>
 
       <section id="jogadores" class="section">
         <div class="container">
@@ -323,7 +323,7 @@
         <div class="container">
           <h2>Não é só Futebol: Lances Emocionantes</h2>
           <div class="slideshow-container">
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-1.jpg"
                 alt="Descrição do Jogo 1"
@@ -336,7 +336,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-2.jpg"
                 alt="Descrição do Jogo 2"
@@ -349,7 +349,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-3.jpg"
                 alt="Descrição do Jogo 3"
@@ -362,7 +362,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-4.jpg"
                 alt="Descrição do Jogo 4"
@@ -375,7 +375,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-5.jpg"
                 alt="Descrição do Jogo 5"
@@ -388,7 +388,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-6.jpg"
                 alt="Descrição do Jogo 6"
@@ -401,7 +401,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-7.jpg"
                 alt="Descrição do Jogo 7"
@@ -414,7 +414,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-8.jpg"
                 alt="Descrição do Jogo 8"
@@ -427,7 +427,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-9.jpg"
                 alt="Descrição do Jogo 9"
@@ -440,7 +440,7 @@
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slide fade">
               <img
                 src="./assets/banner-slide-2/jogo-10.jpg"
                 alt="Descrição do Jogo 10"
@@ -453,20 +453,20 @@
               </div>
             </div>
 
-            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <div style="text-align: center">
-            <span class="dot2" onclick="currentSlide2(1)"></span>
-            <span class="dot2" onclick="currentSlide2(2)"></span>
-            <span class="dot2" onclick="currentSlide2(3)"></span>
-            <span class="dot2" onclick="currentSlide2(4)"></span>
-            <span class="dot2" onclick="currentSlide2(5)"></span>
-            <span class="dot2" onclick="currentSlide2(6)"></span>
-            <span class="dot2" onclick="currentSlide2(7)"></span>
-            <span class="dot2" onclick="currentSlide2(8)"></span>
-            <span class="dot2" onclick="currentSlide2(9)"></span>
-            <span class="dot2" onclick="currentSlide2(10)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
           </div>
         </div>
       </section>
@@ -484,9 +484,7 @@
       </div>
     </footer>
     <script>
-
       let slideIndex = 1;
-
       showSlides(slideIndex);
 
       function plusSlides(n) {
@@ -501,7 +499,6 @@
         let i;
         let slides = document.getElementsByClassName("slide");
         let dots = document.getElementsByClassName("dot");
-
         if (n > slides.length) {
           slideIndex = 1;
         }
@@ -520,44 +517,6 @@
 
       // Opcional: Adicionar transição automática
       setInterval(() => plusSlides(1), 5000); // Troca de slide a cada 5 segundos
-
-      
-
-      let slideIndex2 = 1;
-
-      showSlides2(slideIndex2);
-
-      function plusSlides2(n) {
-        showSlides2((slideIndex2 += n));
-      }
-
-      function currentSlide2(n) {
-        showSlides2((slideIndex2 = n));
-      }
-
-      function showSlides2(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide2");
-        let dots = document.getElementsByClassName("dot2");
-
-        if (n > slides.length) {
-          slideIndex2 = 1;
-        }
-        if (n < 1) {
-          slideIndex2 = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex2 - 1].style.display = "block";
-        dots[slideIndex2 - 1].className += " active";
-      }
-
-      // Opcional: Adicionar transição automática
-      setInterval(() => plusSlides2(1), 5000); // Troca de slide a cada 5 segundos
     </script>
   </body>
 </html>
