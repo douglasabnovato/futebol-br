@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #009933; /* Verde Brasil */
+  color: white;
+  text-align: center;
+  padding-block: 46px;
+  padding-inline:20px; 
+}
+
+#hero {
+  background-image: url("campo-de-futebol.jpg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
