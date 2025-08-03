@@ -29,3 +29,9 @@ O projeto está em constante evolução. As seguintes melhorias e adições est�
 3.  **Animações e Efeitos:** Aprimorar as transições entre seções e elementos com micro-interações para uma experiência de usuário ainda mais fluida.
 4.  **Otimização de Performance:** Melhorar o carregamento de imagens e vídeos para garantir que o site seja rápido em todas as conexões.
 5.  **Criação de um Blog:** Adicionar uma seção de blog para notícias e artigos sobre o futebol brasileiro, permitindo uma atualização frequente do conteúdo.
+
+## Seção da pelada dos amigos
+
+inserir mais imagens e vídeos e relatos dos lances importantes do campeonato.
+
+@douglasabnovato
