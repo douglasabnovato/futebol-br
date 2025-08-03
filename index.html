@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Futebol BR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -13,8 +19,8 @@
         <nav class="main-nav">
           <ul>
             <li><a href="#hero">Home</a></li>
-            <li><a href="#historicos">Meus Jogos Históricos Preferidos</a></li>
-            <li><a href="#jogadores">Jogadores Preferidos</a></li>
+            <li><a href="#historicos">Jogos</a></li>
+            <li><a href="#jogadores">Jogadores</a></li>
             <li><a href="#sobre">Sobre</a></li>
           </ul>
         </nav>
@@ -35,50 +41,9 @@
           <p class="intro-text">
             A história do futebol brasileiro é rica em momentos mágicos,
             partidas épicas que ecoam na memória dos torcedores e se perpetuam
-            através das gerações. Nesta seção especial, embarcaremos em uma
-            viagem nostálgica para reviver alguns dos jogos que marcaram minha
-            trajetória como apaixonado pelo esporte. São confrontos que
-            transcenderam o simples resultado, carregando consigo dramas,
-            reviravoltas emocionantes e atuações de gala que definiram épocas e
-            consagraram ídolos. Cada partida aqui selecionada possui um
-            significado único, seja pela importância do campeonato, pela
-            rivalidade acirrada entre os clubes, ou pela beleza plástica dos
-            lances que ficaram gravados em nossa retina.
-          </p>
-
-          <p class="intro-text">
-            Mergulharemos em atmosferas vibrantes de estádios lotados, onde a
-            paixão da torcida pulsava em uníssono, impulsionando seus times rumo
-            à vitória ou lamentando derrotas amargas. Recordaremos os gritos de
-            gol que ecoaram pelos lares brasileiros, as defesas milagrosas que
-            desafiaram a lógica, os dribles desconcertantes que incendiaram a
-            arquibancada e os passes precisos que culminaram em jogadas
-            inesquecíveis. Estes jogos não são apenas lembranças de resultados
-            passados, mas sim fragmentos de uma cultura que respira futebol,
-            onde cada partida se torna uma narrativa única, repleta de heróis e
-            vilões, de alegrias e tristezas compartilhadas.
-          </p>
-
-          <p class="intro-text">
-            Ao revisitar esses confrontos históricos, a intenção é reacender a
-            chama da emoção que o futebol proporciona, especialmente em suas
-            manifestações mais grandiosas. É uma oportunidade de apresentar às
-            novas gerações a magnitude de eventos que construíram a identidade
-            do nosso futebol, mostrando a garra, a técnica e a paixão que sempre
-            caracterizaram os craques brasileiros. Para os mais experientes, é
-            um convite a uma viagem no tempo, um reencontro com as sensações que
-            marcaram suas vidas e fortaleceram seu amor pelo esporte bretão.
-          </p>
-
-          <p class="intro-text">
-            Prepare-se para reviver momentos inesquecíveis, para sentir
-            novamente a adrenalina das disputas acirradas e a euforia das
-            conquistas memoráveis. Cada vídeo a seguir é uma janela para um
-            capítulo especial da história do futebol brasileiro, uma
-            oportunidade de testemunhar a magia que torna este esporte uma
-            paixão nacional. Aperte o play e deixe a emoção tomar conta,
-            enquanto revisitamos juntos os jogos que se tornaram verdadeiros
-            patrimônios da nossa memória esportiva.
+            através das gerações. Mergulharemos em atmosferas vibrantes de
+            estádios lotados, onde a paixão da torcida pulsava em uníssono,
+            impulsionando seus times rumo à vitória.
           </p>
 
           <div class="video-container">
@@ -92,9 +57,11 @@
               allowfullscreen
             ></iframe>
             <p class="video-description">
-              <strong>Final da Copa do Mundo de 1994: Brasil x Itália.</strong>
+              <strong
+                >Final da Copa do Mundo de 1994: Brasil x Itália.</strong
+              >
               A emocionante disputa de pênaltis que consagrou o Brasil
-              tetracampeão mundial após 24 anos de espera.
+              tetracampeão mundial.
             </p>
           </div>
 
@@ -110,14 +77,13 @@
             ></iframe>
             <p class="video-description">
               <strong
-                >Semifinal da Libertadores de 2011: Santos x Corinthians
-                (Ida).</strong
+                >Semifinal da Libertadores de 2011: Santos x Corinthians (Ida).</strong
               >
               Um clássico eletrizante com direito a golaço de Neymar e muita
               rivalidade.
             </p>
           </div>
-
+          
           <div class="video-container">
             <iframe
               width="560"
@@ -178,15 +144,15 @@
           </div>
         </div>
       </section>
-      
+
       <section id="jogos-historicos-slideshow" class="section">
         <div class="container">
           <h2>Momentos Épicos: Reviva a História</h2>
-          <div class="slideshow-container">
-            <div class="slide fade">
+          <div class="slideshow-container" data-slideshow-id="1">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-1.jpg"
-                alt="Descrição do Jogo 1"
+                alt="Final da Copa de 70: Brasil tricampeão mundial com Pelé."
               />
               <div class="caption">
                 <p>
@@ -196,10 +162,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-2.jpg"
-                alt="Descrição do Jogo 2"
+                alt="A Batalha de Rosário: Argentina vence o Brasil em um jogo tenso."
               />
               <div class="caption">
                 A Batalha de Rosário: Argentina vence o Brasil em um jogo tenso
@@ -207,10 +173,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-3.jpg"
-                alt="Descrição do Jogo 3"
+                alt="O Milagre de Berna: Alemanha derrota a favorita Hungria na final da Copa de 54."
               />
               <div class="caption">
                 O Milagre de Berna: Alemanha derrota a favorita Hungria na final
@@ -218,10 +184,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-4.jpg"
-                alt="Descrição do Jogo 4"
+                alt="A Mão de Deus: Maradona marca um gol polêmico contra a Inglaterra em 86."
               />
               <div class="caption">
                 A Mão de Deus: Maradona marca um gol polêmico contra a
@@ -229,10 +195,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-5.jpg"
-                alt="Descrição do Jogo 5"
+                alt="O 7 a 1: Alemanha humilha o Brasil em pleno Mineirão na semifinal de 2014."
               />
               <div class="caption">
                 O 7 a 1: Alemanha humilha o Brasil em pleno Mineirão na
@@ -240,10 +206,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-6.jpg"
-                alt="Descrição do Jogo 6"
+                alt="A Remontada Histórica: Barcelona reverte um 4 a 0 contra o PSG na Champions League."
               />
               <div class="caption">
                 A Remontada Histórica: Barcelona reverte um 4 a 0 contra o PSG
@@ -251,10 +217,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-7.jpg"
-                alt="Descrição do Jogo 7"
+                alt="O Gol de Ouro de Bierhoff: Alemanha vence a Euro 96 contra a República Tcheca."
               />
               <div class="caption">
                 O Gol de Ouro de Bierhoff: Alemanha vence a Euro 96 contra a
@@ -262,10 +228,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-8.jpg"
-                alt="Descrição do Jogo 8"
+                alt="A Final Épica de 2005: Liverpool busca um empate improvável contra o Milan na Champions."
               />
               <div class="caption">
                 A Final Épica de 2005: Liverpool busca um empate improvável
@@ -273,10 +239,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-9.jpg"
-                alt="Descrição do Jogo 9"
+                alt="O Centenário do Clássico: Um emocionante Palmeiras x Corinthians com muitos gols."
               />
               <div class="caption">
                 O Centenário do Clássico: Um emocionante Palmeiras x Corinthians
@@ -284,10 +250,10 @@
               </div>
             </div>
 
-            <div class="slide fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-1/jogo-10.jpg"
-                alt="Descrição do Jogo 10"
+                alt="A Magia de Zico no Maracanã: Um Flamengo x Vasco inesquecível nos anos 80."
               />
               <div class="caption">
                 A Magia de Zico no Maracanã: Um Flamengo x Vasco inesquecível
@@ -295,23 +261,23 @@
               </div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
           </div>
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
+          <div class="slideshow-dots-container">
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
           </div>
         </div>
-      </section> 
+      </section>
 
       <section id="jogadores" class="section">
         <div class="container">
@@ -319,154 +285,133 @@
         </div>
       </section>
 
-      <section id="jogos-historicos-slideshow" class="section">
+      <section id="jogos-historicos-slideshow-2" class="section">
         <div class="container">
           <h2>Não é só Futebol: Lances Emocionantes</h2>
-          <div class="slideshow-container">
-            <div class="slide2 fade">
+          <div class="slideshow-container" data-slideshow-id="2">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-1.jpg"
-                alt="Descrição do Jogo 1"
+                alt="O Estádio do Maracanã no Rio de Janeiro."
               />
               <div class="caption">
-                <p>
-                  1.The Maracanã Stadium in Rio de Janeiro, Brazil, during a
-                  match
-                </p>
+                <p>1. O Estádio do Maracanã no Rio de Janeiro.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-2.jpg"
-                alt="Descrição do Jogo 2"
+                alt="O Estádio de Wembley em Londres."
               />
               <div class="caption">
-                <p>
-                  2. The Wembley Stadium in London, England, during a penalty
-                  shootout.
-                </p>
+                <p>2. O Estádio de Wembley em Londres, durante uma disputa de pênaltis.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-3.jpg"
-                alt="Descrição do Jogo 3"
+                alt="O Estádio Camp Nou em Barcelona."
               />
               <div class="caption">
                 <p>
-                  3. The Camp Nou stadium in Barcelona, Spain, during a
-                  Champions League match.
+                  3. O Estádio Camp Nou em Barcelona, durante uma partida da
+                  Champions League.
                 </p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-4.jpg"
-                alt="Descrição do Jogo 4"
+                alt="A Allianz Arena em Munique à noite."
               />
               <div class="caption">
-                <p>
-                  4. The Allianz Arena in Munich, Germany, during a match at
-                  night.
-                </p>
+                <p>4. A Allianz Arena em Munique, Alemanha, durante um jogo à noite.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-5.jpg"
-                alt="Descrição do Jogo 5"
+                alt="O Estádio San Siro em Milão."
               />
               <div class="caption">
-                <p>
-                  5. The San Siro stadium in Milan, Italy, during a match with a
-                  player celebrating a goal.
-                </p>
+                <p>5. O Estádio San Siro em Milão, com um jogador comemorando um gol.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-6.jpg"
-                alt="Descrição do Jogo 6"
+                alt="O Estádio Azteca na Cidade do México."
               />
               <div class="caption">
-                <p>
-                  6. The Azteca Stadium in Mexico City, Mexico, during a World
-                  Cup match.
-                </p>
+                <p>6. O Estádio Azteca na Cidade do México, durante uma partida da Copa do Mundo.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-7.jpg"
-                alt="Descrição do Jogo 7"
+                alt="O Estádio Parc des Princes em Paris."
               />
               <div class="caption">
-                <p>
-                  7. The Parc des Princes stadium in Paris, France, during a
-                  match with a player celebrating a goal.
-                </p>
+                <p>7. O Estádio Parc des Princes em Paris, com um jogador comemorando.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-8.jpg"
-                alt="Descrição do Jogo 8"
+                alt="O Estádio de Anfield em Liverpool."
               />
               <div class="caption">
-                <p>
-                  8. The Anfield stadium in Liverpool, England, during a match
-                  with a packed crowd.
-                </p>
+                <p>8. O Estádio de Anfield em Liverpool, com a torcida lotada.</p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-9.jpg"
-                alt="Descrição do Jogo 9"
+                alt="O Signal Iduna Park em Dortmund."
               />
               <div class="caption">
                 <p>
-                  9. The Signal Iduna Park in Dortmund, Germany, during a match
-                  with a yellow and black sea of fans.
+                  9. O Signal Iduna Park em Dortmund, com um mar de torcedores
+                  amarelos e pretos.
                 </p>
               </div>
             </div>
 
-            <div class="slide2 fade">
+            <div class="slideshow-item fade">
               <img
                 src="./assets/banner-slide-2/jogo-10.jpg"
-                alt="Descrição do Jogo 10"
+                alt="O Estádio Santiago Bernabéu em Madri."
               />
               <div class="caption">
                 <p>
-                  10. The Santiago Bernabéu stadium in Madrid, Spain, during a
-                  match with a player scoring a goal.
+                  10. O Estádio Santiago Bernabéu em Madri, com um jogador
+                  marcando um gol.
                 </p>
               </div>
             </div>
 
-            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            <a class="prev">❮</a>
+            <a class="next">❯</a>
           </div>
-          <div style="text-align: center">
-            <span class="dot2" onclick="currentSlide2(1)"></span>
-            <span class="dot2" onclick="currentSlide2(2)"></span>
-            <span class="dot2" onclick="currentSlide2(3)"></span>
-            <span class="dot2" onclick="currentSlide2(4)"></span>
-            <span class="dot2" onclick="currentSlide2(5)"></span>
-            <span class="dot2" onclick="currentSlide2(6)"></span>
-            <span class="dot2" onclick="currentSlide2(7)"></span>
-            <span class="dot2" onclick="currentSlide2(8)"></span>
-            <span class="dot2" onclick="currentSlide2(9)"></span>
-            <span class="dot2" onclick="currentSlide2(10)"></span>
+          <div class="slideshow-dots-container">
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
+            <span class="slideshow-dot"></span>
           </div>
         </div>
       </section>
@@ -480,84 +425,9 @@
 
     <footer class="main-footer">
       <div class="container">
-        <p>&copy; 2023 Futebol BR - Todos os direitos reservados.</p>
+        <p>© 2023 Futebol BR - Todos os direitos reservados.</p>
       </div>
     </footer>
-    <script>
-
-      let slideIndex = 1;
-
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
-
-      // Opcional: Adicionar transição automática
-      setInterval(() => plusSlides(1), 5000); // Troca de slide a cada 5 segundos
-
-      
-
-      let slideIndex2 = 1;
-
-      showSlides2(slideIndex2);
-
-      function plusSlides2(n) {
-        showSlides2((slideIndex2 += n));
-      }
-
-      function currentSlide2(n) {
-        showSlides2((slideIndex2 = n));
-      }
-
-      function showSlides2(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide2");
-        let dots = document.getElementsByClassName("dot2");
-
-        if (n > slides.length) {
-          slideIndex2 = 1;
-        }
-        if (n < 1) {
-          slideIndex2 = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex2 - 1].style.display = "block";
-        dots[slideIndex2 - 1].className += " active";
-      }
-
-      // Opcional: Adicionar transição automática
-      setInterval(() => plusSlides2(1), 5000); // Troca de slide a cada 5 segundos
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>

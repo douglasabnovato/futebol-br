@@ -7,10 +7,22 @@
   padding: 0;
 }
 
+:root {
+  --verde-principal: #008000;
+  --ouro-destaque: #ffD700;
+  --azul-complementar: #003366;
+  --fundo-pagina: #f5f5f5;
+  --fundo-secao: #fafafa;
+  --texto-principal: #333333;
+  --texto-secundario: #555555;
+  --sombra-leve: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --sombra-media: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f4f4f4; /* Um tom de cinza mais claro */
-  color: #333; /* Cor de texto padrão */
+  background-color: var(--fundo-pagina);
+  color: var(--texto-principal);
   line-height: 1.6;
 }
 
@@ -18,14 +30,15 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* Espaçamento nas laterais */
+  padding: 0 20px;
 }
 
 /* Estilos para o cabeçalho principal */
 .main-header {
-  background-color: #009933; /* Verde Brasil */
+  background-color: var(--verde-principal);
   color: white;
   padding: 20px 0;
+  box-shadow: var(--sombra-media);
 }
 
 .main-header .container {
@@ -62,7 +75,7 @@ body {
 }
 
 .main-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Seção Hero */
@@ -70,7 +83,7 @@ body {
   background-image: url("./assets/hero/campo-futebol-torcida-1.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px; /* Altura inicial para mobile */
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,11 +94,15 @@ body {
 
 .hero-content {
   max-width: 80%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: var(--ouro-destaque);
 }
 
 .hero p {
@@ -99,63 +116,49 @@ body {
 
 .section h2 {
   font-size: 1.8rem;
-  color: #009933;
+  color: var(--azul-complementar);
   margin-bottom: 20px;
   text-align: center;
 }
 
 /* Rodapé */
 .main-footer {
-  background-color: #333;
+  background-color: var(--azul-complementar);
   color: white;
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
 }
 
-.main-footer .container {
-  padding: 0 20px;
-}
 /* Estilos para a seção de históricos */
 #historicos {
-  background-color: #fff; /* Fundo branco para destacar o conteúdo */
-}
-
-#historicos .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#historicos h2 {
-  color: #009933; /* Verde Brasil para o título da seção */
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
+  background-color: var(--fundo-secao);
 }
 
 .intro-text {
-  color: #555; /* Cor de texto um pouco mais escura para melhor leitura */
+  color: var(--texto-secundario);
   line-height: 1.7;
   margin-bottom: 25px;
-  text-align: justify; /* Justificar o texto para melhor estética em telas maiores */
+  text-align: justify;
 }
 
 .video-container {
   margin-bottom: 30px;
-  border: 1px solid #ddd; /* Borda sutil para os containers de vídeo */
+  border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden; /* Garante que o border-radius funcione corretamente com o iframe */
+  overflow: hidden;
+  box-shadow: var(--sombra-leve);
 }
 
 .video-container iframe {
-  display: block; /* Remove espaçamento extra abaixo do iframe */
-  width: 100%; /* Ocupa toda a largura do container */
-  aspect-ratio: 16 / 9; /* Mantém a proporção widescreen */
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .video-description {
-  background-color: #f9f9f9; /* Fundo levemente cinza para a descrição */
-  color: #333;
+  background-color: white;
+  color: var(--texto-principal);
   padding: 15px;
   font-size: 0.9rem;
   text-align: center;
@@ -163,86 +166,42 @@ body {
 
 .video-description strong {
   font-weight: bold;
-  color: #0077cc; /* Uma cor para destacar o título do vídeo */
+  color: var(--verde-principal);
 }
 
-/* Responsividade para a seção de históricos */
-
-/* Para telas menores que 600px (smartphones) */
-@media (max-width: 599px) {
-  #historicos h2 {
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-  }
-
-  .intro-text {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-    text-align: left; /* Alinhar à esquerda em telas menores para melhor leitura */
-  }
-}
-
-/* Para telas maiores que 600px (tablets) */
-@media (min-width: 600px) and (max-width: 991px) {
-  #historicos h2 {
-    font-size: 1.9rem;
-    margin-bottom: 25px;
-  }
-
-  .intro-text {
-    font-size: 1rem;
-  }
-}
-
-/* Para telas maiores que 992px (desktops) - Já definido nos estilos gerais */
-
-/* Estilos para a seção de slideshow de jogos históricos */
-#jogos-historicos-slideshow {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-#jogos-historicos-slideshow h2 {
-  color: #009933;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
+/* Estilos para o slideshow */
 .slideshow-container {
   max-width: 800px;
   position: relative;
   margin: auto;
+  border-radius: 8px;
+  box-shadow: var(--sombra-media);
+  overflow: hidden;
 }
 
-.slide,
-.slide2 {
-  display: none; /* Esconde todos os slides por padrão */
+.slideshow-item {
+  display: none;
 }
 
-.slide img,
-.slide2 img {
+.slideshow-item img {
   width: 100%;
   display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .caption {
-  color: #333;
+  color: var(--texto-principal);
   font-size: 0.9rem;
   padding: 15px;
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 /* Botões de Próximo e Anterior */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -252,42 +211,43 @@ body {
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  transition: background-color 0.6s ease;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 4px 4px 0;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 4px 0 0 4px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Indicadores (bolinhas) */
-.dot-container {
+.slideshow-dots-container {
   text-align: center;
   margin-top: 20px;
 }
 
-.dot,
-.dot2 {
+.slideshow-dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease, transform 0.3s ease;
 }
 
-.active, 
-.dot:hover,
-.dot2:hover {
-  background-color: #717171;
+.slideshow-dot.active,
+.slideshow-dot:hover {
+  background-color: var(--azul-complementar);
+  transform: scale(1.1);
 }
 
 /* Animação de Fade */
@@ -297,54 +257,65 @@ body {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-  .prev, .next {
-      font-size: 1rem;
-      padding: 10px;
+  from {
+    opacity: 0.4;
   }
-
-  .caption {
-      font-size: 0.8rem;
-      padding: 10px;
+  to {
+    opacity: 1;
   }
 }
 
 /* Responsividade (Mobile First) */
+@media (max-width: 600px) {
+  .prev,
+  .next {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .caption {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav ul li {
+    margin: 5px 0;
+  }
+  .main-header .container {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .intro-text {
+    text-align: left;
+  }
+}
 
-/* Para telas maiores que 600px (tablets) */
 @media (min-width: 600px) {
   .hero {
     height: 500px;
   }
-
   .hero h1 {
     font-size: 3rem;
   }
-
   .hero p {
     font-size: 1.3rem;
   }
-
   .section h2 {
     font-size: 2.2rem;
   }
 }
 
-/* Para telas maiores que 992px (desktops) */
 @media (min-width: 992px) {
   .logo {
     font-size: 2rem;
   }
-
   .main-nav ul li {
     margin-left: 30px;
   }
-
   .main-nav a {
     padding: 15px;
   }
